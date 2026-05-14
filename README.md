@@ -1,4 +1,4 @@
-# 🧬 SEER Breast Cancer Prediction System
+#  SEER Breast Cancer Prediction System
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 The **SEER Breast Cancer Prediction System** is a machine learning-powered healthcare analytics application developed using the **SEER (Surveillance, Epidemiology, and End Results)** clinical dataset.
 
@@ -30,7 +30,7 @@ This project combines:
 
 ---
 
-# 🚀 Key Features
+#  Key Features
 
 ✅ Upload trained machine learning models (`.pkl`)  
 ✅ Upload SEER clinical datasets (`.csv`)  
@@ -44,7 +44,7 @@ This project combines:
 
 ---
 
-# 🤖 Machine Learning Algorithms
+#  Machine Learning Algorithms
 
 | Algorithm | Description |
 |---|---|
@@ -54,7 +54,7 @@ This project combines:
 
 ---
 
-# 📊 Dataset Features
+# Dataset Features
 
 | Feature | Description |
 |---|---|
@@ -68,7 +68,7 @@ This project combines:
 
 ---
 
-# 🛠️ Technologies Used
+#  Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -83,7 +83,7 @@ This project combines:
 
 ---
 
-# ⚙️ System Workflow
+#  System Workflow
 
 ```text
 1. Train machine learning model using SEER dataset
@@ -97,7 +97,7 @@ This project combines:
 
 ---
 
-# ▶️ Running the Application
+# Running the Application
 
 ## Install Dependencies
 
@@ -115,7 +115,7 @@ After execution, open the generated localhost URL in your browser.
 
 ---
 
-# 📈 Expected Outputs
+# Expected Outputs
 
 - Prediction labels (`Alive / Dead`)
 - Accuracy metrics
@@ -126,7 +126,7 @@ After execution, open the generated localhost URL in your browser.
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 SEER-Breast-Cancer-Prediction/
@@ -145,7 +145,7 @@ SEER-Breast-Cancer-Prediction/
 
 ---
 
-# 📷 Dashboard Preview
+# System Prototype Dashboard Preview
 
 ```text
 ✔ Upload Dataset
@@ -157,13 +157,13 @@ SEER-Breast-Cancer-Prediction/
 
 ---
 
-# 🔬 Research Objective
+#  Research Objective
 
 The objective of this project is to improve breast cancer survival prediction using machine learning techniques and clinical healthcare datasets to support data-driven medical decision-making.
 
 ---
 
-# 📌 Future Improvements
+# Future Improvements
 
 - Deep Learning integration (ANN/CNN)
 - Real-time clinical API integration
@@ -174,14 +174,14 @@ The objective of this project is to improve breast cancer survival prediction us
 
 ---
 
-# 👨‍💻 Developer
+#  Developer
 
 **Krish**  
 Software Developer | Cybersecurity Specialist | Machine Learning Enthusiast
 
 ---
 
-# 📜 License
+# License
 
 This project is developed for educational and research purposes.
 
