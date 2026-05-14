@@ -1,309 +1,194 @@
+# 🧬 SEER Breast Cancer Prediction System
 
+<div align="center">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEER Breast Cancer Prediction System</title>
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-AI-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+### Machine Learning-Based Clinical Decision Support System for Breast Cancer Survival Prediction Using the SEER Clinical Dataset
 
-        body {
-            background: #f4f7fb;
-            color: #333;
-            line-height: 1.7;
-        }
+</div>
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 40px auto;
-        }
+---
 
-        .hero {
-            background: linear-gradient(135deg, #1f4e79, #2f80ed);
-            color: white;
-            padding: 60px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            text-align: center;
-        }
+# 📌 Project Overview
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+The **SEER Breast Cancer Prediction System** is a machine learning-powered healthcare analytics application developed using the **SEER (Surveillance, Epidemiology, and End Results)** clinical dataset.
 
-        .hero p {
-            font-size: 18px;
-            opacity: 0.95;
-        }
+The system predicts breast cancer survival outcomes using advanced machine learning algorithms and provides an interactive web dashboard for data visualization, prediction analysis, and performance evaluation.
 
-        .section {
-            background: white;
-            margin-top: 30px;
-            padding: 35px;
-            border-radius: 18px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
+This project combines:
 
-        .section h2 {
-            color: #1f4e79;
-            margin-bottom: 20px;
-            border-left: 6px solid #2f80ed;
-            padding-left: 12px;
-        }
+- Machine Learning
+- Clinical Data Analysis
+- Data Visualization
+- Predictive Analytics
+- Streamlit Web Development
 
-        ul {
-            padding-left: 20px;
-        }
+---
 
-        li {
-            margin-bottom: 10px;
-        }
+# 🚀 Key Features
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
+✅ Upload trained machine learning models (`.pkl`)  
+✅ Upload SEER clinical datasets (`.csv`)  
+✅ Predict patient survival outcomes  
+✅ Interactive Streamlit web dashboard  
+✅ Automatic preprocessing and data cleaning  
+✅ Confusion matrix visualization  
+✅ Performance metrics evaluation  
+✅ Download prediction reports  
+✅ Real-time prediction analysis  
 
-        .card {
-            background: #f8fbff;
-            padding: 20px;
-            border-radius: 15px;
-            border: 1px solid #dce7f7;
-            transition: 0.3s;
-        }
+---
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
+# 🤖 Machine Learning Algorithms
 
-        .card h3 {
-            color: #1f4e79;
-            margin-bottom: 10px;
-        }
+| Algorithm | Description |
+|---|---|
+| Logistic Regression | Baseline classification algorithm for survival prediction |
+| Random Forest | Ensemble learning algorithm for improved accuracy |
+| XGBoost | Advanced gradient boosting algorithm optimized for predictive performance |
 
-        .code-block {
-            background: #1e1e1e;
-            color: #00ff99;
-            padding: 20px;
-            border-radius: 12px;
-            overflow-x: auto;
-            margin-top: 15px;
-            font-family: Consolas, monospace;
-        }
+---
 
-        footer {
-            text-align: center;
-            margin: 40px 0;
-            color: #666;
-        }
+# 📊 Dataset Features
 
-        .badge {
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 30px;
-            background: #2f80ed;
-            color: white;
-            margin: 5px;
-            font-size: 14px;
-        }
+| Feature | Description |
+|---|---|
+| Age | Patient age at diagnosis |
+| Race | Patient ethnicity/racial background |
+| T Stage | Tumor staging classification |
+| N Stage | Lymph node staging classification |
+| Tumor Size | Measured tumor size |
+| Estrogen Status | Hormone receptor status |
+| Status | Target variable (Alive / Dead) |
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+---
 
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 14px;
-            text-align: left;
-        }
+# 🛠️ Technologies Used
 
-        table th {
-            background: #1f4e79;
-            color: white;
-        }
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Streamlit | Web application framework |
+| Scikit-learn | Machine learning library |
+| XGBoost | Gradient boosting framework |
+| Pandas | Data processing |
+| NumPy | Numerical computations |
+| Matplotlib | Data visualization |
+| Joblib | Model serialization |
 
-        table tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
+---
 
-    <div class="container">
+# ⚙️ System Workflow
 
-        <div class="hero">
-            <h1>🧬 SEER Breast Cancer Prediction System</h1>
-            <p>
-                Machine Learning-Based Clinical Decision Support System for Predicting
-                Breast Cancer Survival Outcomes Using the SEER Clinical Dataset.
-            </p>
-        </div>
+```text
+1. Train machine learning model using SEER dataset
+2. Save best model as .pkl file
+3. Launch Streamlit web application
+4. Upload trained model (.pkl)
+5. Upload dataset (.csv)
+6. Generate predictions
+7. Visualize metrics and download reports
+```
 
-        <div class="section">
-            <h2>📌 Project Overview</h2>
-            <p>
-                This project implements a machine learning-powered breast cancer prediction system
-                using the SEER (Surveillance, Epidemiology, and End Results) clinical dataset.
-                The system predicts patient survival outcomes using advanced machine learning algorithms
-                and provides an interactive web-based dashboard for healthcare analytics.
-            </p>
-        </div>
+---
 
-        <div class="section">
-            <h2>🚀 Key Features</h2>
-            <ul>
-                <li>Upload trained machine learning models (.pkl)</li>
-                <li>Upload SEER clinical datasets (.csv)</li>
-                <li>Predict breast cancer survival outcomes</li>
-                <li>Interactive web dashboard using Streamlit</li>
-                <li>Confusion matrix and performance visualization</li>
-                <li>Download prediction reports</li>
-                <li>Automatic preprocessing and data cleaning</li>
-            </ul>
-        </div>
+# ▶️ Running the Application
 
-        <div class="section">
-            <h2>🤖 Machine Learning Algorithms</h2>
+## Install Dependencies
 
-            <div class="tech-grid">
-                <div class="card">
-                    <h3>Logistic Regression</h3>
-                    <p>
-                        Baseline classification algorithm for predicting patient survival outcomes.
-                    </p>
-                </div>
+```bash
+pip install -r requirements.txt
+```
 
-                <div class="card">
-                    <h3>Random Forest</h3>
-                    <p>
-                        Ensemble learning algorithm used for high-performance classification.
-                    </p>
-                </div>
+## Run the Streamlit Application
 
-                <div class="card">
-                    <h3>XGBoost</h3>
-                    <p>
-                        Advanced gradient boosting algorithm optimized for predictive accuracy.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>📊 Dataset Features</h2>
-
-            <table>
-                <tr>
-                    <th>Feature</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Age</td>
-                    <td>Patient age at diagnosis</td>
-                </tr>
-                <tr>
-                    <td>Race</td>
-                    <td>Patient ethnicity/racial background</td>
-                </tr>
-                <tr>
-                    <td>T Stage</td>
-                    <td>Tumor staging classification</td>
-                </tr>
-                <tr>
-                    <td>N Stage</td>
-                    <td>Lymph node staging classification</td>
-                </tr>
-                <tr>
-                    <td>Tumor Size</td>
-                    <td>Measured tumor size</td>
-                </tr>
-                <tr>
-                    <td>Estrogen Status</td>
-                    <td>Hormone receptor status</td>
-                </tr>
-                <tr>
-                    <td>Status</td>
-                    <td>Target variable (Alive / Dead)</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2>🛠️ Technologies Used</h2>
-
-            <span class="badge">Python</span>
-            <span class="badge">Streamlit</span>
-            <span class="badge">Scikit-learn</span>
-            <span class="badge">XGBoost</span>
-            <span class="badge">Pandas</span>
-            <span class="badge">NumPy</span>
-            <span class="badge">Matplotlib</span>
-            <span class="badge">Joblib</span>
-        </div>
-
-        <div class="section">
-            <h2>⚙️ System Workflow</h2>
-
-            <ol>
-                <li>Train machine learning model using SEER dataset</li>
-                <li>Save best model as .pkl file</li>
-                <li>Launch Streamlit web application</li>
-                <li>Upload trained model (.pkl)</li>
-                <li>Upload dataset (.csv)</li>
-                <li>Generate predictions</li>
-                <li>Visualize metrics and download reports</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h2>▶️ Running the Application</h2>
-
-            <p>Run the following command in Command Prompt:</p>
-
-            <div class="code-block">
+```bash
 python -m streamlit run app.py
-            </div>
+```
 
-            <p style="margin-top:20px;">
-                After execution, open the generated localhost URL in your browser.
-            </p>
-        </div>
+After execution, open the generated localhost URL in your browser.
 
-        <div class="section">
-            <h2>📈 Expected Outputs</h2>
+---
 
-            <ul>
-                <li>Prediction labels (Alive / Dead)</li>
-                <li>Model accuracy metrics</li>
-                <li>Confusion matrix visualization</li>
-                <li>Prediction distribution charts</li>
-                <li>Downloadable prediction reports</li>
-            </ul>
-        </div>
+# 📈 Expected Outputs
 
-        <footer>
-            <p>
-                Developed for Breast Cancer Prediction Research using Machine Learning and the SEER Clinical Dataset.
-            </p>
-        </footer>
+- Prediction labels (`Alive / Dead`)
+- Accuracy metrics
+- Confusion matrix visualization
+- Prediction distribution charts
+- Downloadable prediction reports
+- Interactive healthcare analytics dashboard
 
-    </div>
+---
 
-</body>
-</html>
+# 📂 Project Structure
 
+```text
+SEER-Breast-Cancer-Prediction/
+│
+├── app.py
+├── breast_cancer_best_model.pkl
+├── dataset.csv
+├── requirements.txt
+├── README.md
+│
+├── models/
+├── outputs/
+├── visualizations/
+└── reports/
+```
+
+---
+
+# 📷 Dashboard Preview
+
+```text
+✔ Upload Dataset
+✔ Upload Model
+✔ Generate Predictions
+✔ View Metrics
+✔ Download Reports
+```
+
+---
+
+# 🔬 Research Objective
+
+The objective of this project is to improve breast cancer survival prediction using machine learning techniques and clinical healthcare datasets to support data-driven medical decision-making.
+
+---
+
+# 📌 Future Improvements
+
+- Deep Learning integration (ANN/CNN)
+- Real-time clinical API integration
+- Cloud deployment
+- Advanced healthcare analytics
+- Explainable AI (XAI)
+- Multi-class cancer prediction
+
+---
+
+# 👨‍💻 Developer
+
+**John Mwaniki**  
+Software Developer | Cybersecurity Specialist | Machine Learning Enthusiast
+
+---
+
+# 📜 License
+
+This project is developed for educational and research purposes.
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, consider giving it a star!
+
+</div>
