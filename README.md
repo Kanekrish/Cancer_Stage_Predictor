@@ -6,7 +6,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
 ![XGBoost](https://img.shields.io/badge/XGBoost-AI-success?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-UnderDesign-brightgreen?style=for-the-badge)
 
 ### Machine Learning-Based Clinical Decision Support System for Breast Cancer Survival Prediction Using the SEER Clinical Dataset
 
