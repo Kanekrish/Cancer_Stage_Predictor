@@ -176,7 +176,7 @@ The objective of this project is to improve breast cancer survival prediction us
 
 # 👨‍💻 Developer
 
-**John Mwaniki**  
+**Krish**  
 Software Developer | Cybersecurity Specialist | Machine Learning Enthusiast
 
 ---
